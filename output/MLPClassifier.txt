@@ -1,0 +1,8 @@
+              precision    recall  f1-score   support
+
+    fake job       0.76      0.66      0.71       181
+    real job       0.98      0.99      0.99      3395
+
+    accuracy                           0.97      3576
+   macro avg       0.87      0.83      0.85      3576
+weighted avg       0.97      0.97      0.97      3576
