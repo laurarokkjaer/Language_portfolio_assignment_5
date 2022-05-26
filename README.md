@@ -18,7 +18,7 @@ Also containing a ```MITLICENSE``` for guidelines of how to reproduce and use th
 
 ## Assignment description
 For my self assigned project i wanted to build a model which can predict fake or real job posts. I want to create a classification model that can learn this fraudulence of job postings and descriptions. To achieve this i will be:
-- 
+- Lavet om i utils from label to fraudulent
 
 
 ### The goal of the assignment 
