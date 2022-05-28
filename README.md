@@ -21,7 +21,6 @@ This is my self-assigned project for which I have chosen to solve the following 
 How to train a model to predict/detect fake or real job postings online on the basis of different valuable informations abput the jobs. I want to create a classification model that can learn and distinguish the fraudulence of job postings and descriptions. To achieve this I will be:
 - Performing some regex in order to gather the right informations
 - Train test split
-- Lavet om i utils from label to fraudulent
 - Classifing using the MLP classifier 
 - Some futher evaluation for analysing 
 - Visualizing cross validation 
