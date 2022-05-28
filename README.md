@@ -54,6 +54,6 @@ These are the steps you will need to follow in order to get the script running a
 
 
 ## Discussion of results
-The classification accuracy is on 97% and the plot show a rather consistent graph which is not overfit or underfit too much. 
+The classification accuracy is on 97% and the plot show a rather consistent graph which is not overfit or underfit too much. When running the script the features will also be shown in the terminal (also uploaded to the output folder in this repo), which shows the features that determines/predicts the classification on rather it is a real or a fake job posting. 
 
 
