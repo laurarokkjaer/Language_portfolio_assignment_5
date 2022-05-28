@@ -1,7 +1,7 @@
 # System tools
 import os
 import sys
-sys.path.append(os.path.join(".."))
+sys.path.append(os.path.join("utils"))
 
 # Data tools
 import pandas as pd
@@ -33,7 +33,7 @@ if not sys.warnoptions:
 def fake_or_real():
 
     # Get data
-    filename = os.path.join("..", "input", "fake_job_postings.csv")
+    filename = os.path.join("input", "fake_job_postings.csv")
     data = pd.read_csv(filename)
     # Now this time I am balancing the data
     blanced_data = clf.balance(data, 800) # Taking 800 data points
@@ -131,7 +131,7 @@ def fake_or_real():
     cross_val = clf.plot_learning_curve(estimator, title, X_vect, y, cv = cv, n_jobs = 4)    
     
     # The final result saved as a picture
-    plt.savefig('../output/Cross_validation.png')
+    plt.savefig('output/Cross_validation.png')
 
     # Results: 
     # Overfitting (big gap) = high variance 
