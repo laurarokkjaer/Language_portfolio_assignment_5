@@ -54,6 +54,6 @@ These are the steps you will need to follow in order to get the script running a
 
 
 ## Discussion of results
-The 
+The classification accuracy is on 97% and the plot show 
 
 
