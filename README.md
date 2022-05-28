@@ -17,19 +17,26 @@ This repository contains the code and descriptions from the last assigned projec
 Also containing a ```MITLICENSE``` for guidelines of how to reproduce and use the data in this repository, as well as a ```.txt``` reqirements-file, where the required installments will be listed.
 
 ## Assignment description
-For my self assigned project i wanted to build a model which can predict fake or real job posts. I want to create a classification model that can learn this fraudulence of job postings and descriptions. To achieve this i will be:
+This is my self-assigned project for which I have chosen to solve the following task:
+How to train a model to predict/detect fake or real job postings online on the basis of different valuable informations abput the jobs. I want to create a classification model that can learn and distinguish the fraudulence of job postings and descriptions. To achieve this I will be:
+- Performing some regex in order to gather the right informations
+- Train test split
 - Lavet om i utils from label to fraudulent
+- Classifing using the MLP classifier 
+- Some futher evaluation for analysing 
+- Visualizing cross validation 
 
+For this assignment i believe it is important to mention the change I made in the utils file called ```classifier_utils.py```. In the balance() function I had to change "label" to "fraudulent" in order to .groupby fraudulence, which was nessecary in my case. 
 
 ### The goal of the assignment 
-
+The goal of this assignment was to demonstrate the use of the MLP classifier as well as other ```sklearn```methods which can be helpful in furter inspection and evaluation of a text data analysis like this one. 
 
 ### Data source
 This dataset is from [kaggle](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction), and contains 18K job descriptions out of which about 800 are fake. The data consists of both textual information and meta-information about the jobs.
 
 
 ## Methods
-To solve this assignment i have worked with ```opencv``` in order to both calculate the histograms as well as for the general image processing (using the ```calcHist```, ```imread```, ```normalize``` and ```compareHist```). Futhermore i used the ```jimshow``` and ```jimshow_channel``` from the ```utils```-folder, along with the ```matplotlib``` for plotting and visualisation.
+To solve this assignment i have worked with ```TfidfVectorizer``` for text processing and most importantly the ```MLPClassifier``` which is my choise of classifier for this task. Furthermore i used ```LogisticRegression``` in order to do some further inspection of the MLP method and the overall classification. I used ```re```for regex when cleaning and sorting the datasey and at last ```matplotlib``` for visualisation.
 
 ## Usage (reproducing results)
 These are the steps you will need to follow in order to get the script running and working:
@@ -40,15 +47,13 @@ These are the steps you will need to follow in order to get the script running a
 
       - cd src (changing the directory to the src folder in order to run the script)
       
-      - python image_search.py (calling the function within the script)
+      - python self_assigned_project.py (calling the function within the script)
       
 - when processed, there will be a messagge saying that the script has succeeded and that the outputs can be seen in the output folder 
 
 
 
 ## Discussion of results
-The result of this script is an image which contains one target flower image and the calculated three similar images, as well as the calculated distance scores of the images. Furthermore, a csv file is made with the results (similar images). 
-
-For further development, it could have been interesting to look at how to make the script run with a user defined input. Since this code have already been through a transision from jupiter notebook to .py script, it would not have been much change to do. For the user to parse an argument via the command line when running the code, the script would have been more reproduceble/reuseble, because of the fact that the user wpuld be able to define the target image themselves. 
+The 
 
 
