@@ -31,7 +31,7 @@ For this assignment i believe it is important to mention the change I made in th
 The goal of this assignment was to demonstrate the use of the MLP classifier as well as other ```sklearn```methods which can be helpful in furter inspection and evaluation of a text data analysis like this one. 
 
 ### Data source
-This dataset is from [kaggle](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction), and contains 18K job descriptions out of which about 800 are fake. The data consists of both textual information and meta-information about the jobs.
+This dataset is from [kaggle](https://www.kaggle.com/datasets/shivamb/real-or-fake-fake-jobposting-prediction)(last visited on May 30th), and contains 18K job descriptions out of which about 800 are fake. The data consists of both textual information and meta-information about the jobs.
 
 
 ## Methods
