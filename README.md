@@ -25,7 +25,7 @@ How to train a model to predict/detect fake or real job postings online on the b
 - Some futher evaluation for analysing 
 - Visualizing cross validation 
 
-For this assignment i believe it is important to mention the change I made in the utils file called ```classifier_utils.py```. In the balance() function I had to change "label" to "fraudulent" in order to .groupby fraudulence, which was nessecary in my case. 
+For this assignment i believe it is important to mention the change I made in the utils file called ```classifier_utils.py```. In the balance() function I had to change "label" to "fraudulent" in order to .groupby fraudulence, which was nessecary in this case. 
 
 ### The goal of the assignment 
 The goal of this assignment was to demonstrate the use of the MLP classifier as well as other ```sklearn```methods which can be helpful in furter inspection and evaluation of a text data analysis like this one. 
