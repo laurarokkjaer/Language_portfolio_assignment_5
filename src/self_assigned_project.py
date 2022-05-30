@@ -76,7 +76,6 @@ def fake_or_real():
     # Why Tfid? Because it also provides the importance of words in the "documents", rather than just the frequency
 
     vectorizer = TfidfVectorizer(ngram_range = (1,2),  # 1 = individual words only, 2 = either individual words or bigrams
-                                 #lowercase = True,     # why use lowercase? (so you get all instances of a word)
                                  max_df = 0.95,        # df = document frequency. 0.95 = get rid of all words that occur in over 95% of the document
                                  min_df = 0.05,        # 0.05 = get rid of all words that occur in lower than 0.5% of the document
                                  max_features = 500)   # keep only top 500 features (words)
@@ -110,7 +109,7 @@ def fake_or_real():
     classification_report = metrics.classification_report(y_test, y_pred)
     print(classification_report)
 
-    with open('../output/MLPClassifier.txt', 'w') as my_txt_file:
+    with open('output/MLPClassifier.txt', 'w') as my_txt_file:
         my_txt_file.write(classification_report)
         
         
